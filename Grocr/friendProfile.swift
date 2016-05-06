@@ -11,6 +11,8 @@ import UIKit
 class friendProfile: UIViewController {
     @IBOutlet weak var backgroundProf: UIImageView!
     @IBOutlet weak var circleProf: UIImageView!
+    @IBOutlet weak var addGroupButton: UIButton!
+    @IBOutlet weak var rateButton: UIButton!
     @IBOutlet weak var greyAcross: UIView!
     @IBOutlet weak var scoreView: UIView!
     @IBOutlet weak var thirdBuddy: UIImageView!
