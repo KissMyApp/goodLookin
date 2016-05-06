@@ -9,19 +9,19 @@
 import UIKit
 
 class friendProfile: UIViewController {
-    @IBOutlet weak var scoreView: UIView!
-    @IBOutlet weak var circleProf: UIImageView!
-    @IBOutlet weak var studyButton: UIButton!
-    @IBOutlet weak var greyAcross: UIView!
     @IBOutlet weak var backgroundProf: UIImageView!
-    @IBOutlet weak var firstBuddy: UIImageView!
+    @IBOutlet weak var circleProf: UIImageView!
+    @IBOutlet weak var greyAcross: UIView!
+    @IBOutlet weak var scoreView: UIView!
     @IBOutlet weak var thirdBuddy: UIImageView!
     @IBOutlet weak var secondBuddy: UIImageView!
+    @IBOutlet weak var firstBuddy: UIImageView!
     
     
     override func viewDidLoad() {
         
-        /*
+   
+        
         //only apply the blur if the user hasn't disabled transparency effects
         if !UIAccessibilityIsReduceTransparencyEnabled() {
             backgroundProf.backgroundColor = UIColor.clearColor()
@@ -46,7 +46,7 @@ class friendProfile: UIViewController {
         circleProf.clipsToBounds = true
         
         self.view.bringSubviewToFront(circleProf)
-        //self.view.bringSubviewToFront(greyAcross)
+        self.view.bringSubviewToFront(greyAcross)
         
         
         firstBuddy.layer.borderWidth = 1
@@ -66,7 +66,7 @@ class friendProfile: UIViewController {
         thirdBuddy.layer.borderColor = UIColor.blackColor().CGColor
         thirdBuddy.layer.cornerRadius = circleProf.frame.size.width / 4.25
         thirdBuddy.clipsToBounds = true
-*/
+
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

@@ -336,7 +336,7 @@
         <!--Item-->
         <scene sceneID="Kha-Mu-kX2">
             <objects>
-                <viewController id="1fD-bi-G08" sceneMemberID="viewController">
+                <viewController id="1fD-bi-G08" customClass="friendProfile" customModule="Grocr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YZA-05-g2h"/>
                         <viewControllerLayoutGuide type="bottom" id="ERQ-jM-95M"/>
@@ -344,13 +344,94 @@
                     <view key="view" contentMode="scaleToFill" id="EhU-Yb-QXh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="carnage" translatesAutoresizingMaskIntoConstraints="NO" id="38a-TV-1BM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="carnage" translatesAutoresizingMaskIntoConstraints="NO" id="l7n-27-pFu">
+                                <rect key="frame" x="20" y="36" width="161" height="160"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nnw-N4-pLQ">
+                                <rect key="frame" x="246" y="36" width="148" height="160"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="90" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pS4-yP-jRS">
+                                        <rect key="frame" x="35" y="17" width="79" height="55"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Study Sessions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6K-Nw-FpN">
+                                        <rect key="frame" x="15" y="80" width="118" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.0 ✰✰✰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rr0-Dl-fPh">
+                                        <rect key="frame" x="38" y="109" width="72" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.96133008990000002" green="0.43880588339999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEa-kp-ZqR">
+                                <rect key="frame" x="0.0" y="215" width="414" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Diamanté Blackmon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMB-Bh-QCG">
+                                        <rect key="frame" x="8" y="13" width="238" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10,07817 Sant Jordi Ibiza, Spain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSa-NM-TLX">
+                                        <rect key="frame" x="8" y="36" width="153" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6O-6m-VoH">
+                                        <rect key="frame" x="293" y="0.0" width="121" height="65"/>
+                                        <color key="backgroundColor" red="0.96133008990000002" green="0.43880588339999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Study">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sickHair" translatesAutoresizingMaskIntoConstraints="NO" id="6Lr-TF-0Ed">
+                                <rect key="frame" x="20" y="593" width="74" height="74"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Carnages's Latest Buddies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0b-TC-eay">
+                                <rect key="frame" x="20" y="564" width="223" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sickHairCut" translatesAutoresizingMaskIntoConstraints="NO" id="nNt-CG-Dnx">
+                                <rect key="frame" x="102" y="593" width="74" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DaniRiel" translatesAutoresizingMaskIntoConstraints="NO" id="bPi-bn-Ro2">
+                                <rect key="frame" x="184" y="593" width="74" height="74"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="vb0-bw-M6O"/>
+                    <connections>
+                        <outlet property="GreyAcross" destination="eEa-kp-ZqR" id="lck-dK-tBh"/>
+                        <outlet property="backgroundProf" destination="38a-TV-1BM" id="1dB-E9-rTB"/>
+                        <outlet property="circleProf" destination="l7n-27-pFu" id="8tX-k7-bk2"/>
+                        <outlet property="firstBuddy" destination="6Lr-TF-0Ed" id="QM4-oN-YOK"/>
+                        <outlet property="scoreView" destination="nnw-N4-pLQ" id="n5Q-SK-exN"/>
+                        <outlet property="secondBuddy" destination="nNt-CG-Dnx" id="Anv-XM-Lha"/>
+                        <outlet property="thirdBuddy" destination="bPi-bn-Ro2" id="NFK-SC-ZTb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zwp-4B-fts" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2193" y="2032"/>
+            <point key="canvasLocation" x="2618" y="1179"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Ek-Z0-CEa">
@@ -379,6 +460,7 @@
     </scenes>
     <resources>
         <image name="DaniRiel" width="500" height="500"/>
+        <image name="carnage" width="500" height="500"/>
         <image name="home-7 22-27-34-89" width="30" height="30"/>
         <image name="sickHair" width="640" height="640"/>
         <image name="sickHairCut" width="500" height="500"/>
